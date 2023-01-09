@@ -49,4 +49,12 @@ public class Array {
       System.out.println(array[i]);
     }
   }
+
+  public int getItem(int index) {
+    if (index < 0 || index >= this.index) {
+      throw new IllegalArgumentException();
+    }
+
+    return array[index];
+  }
 }
