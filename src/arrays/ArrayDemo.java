@@ -23,6 +23,14 @@ public class ArrayDemo {
       numbers2.insert(10);
       arrays.exercise.Array intersected = numbers.intersect(numbers2);
       intersected.print();
+      System.out.println("----------------------------");
+      System.out.println("reversed");
+      arrays.exercise.Array reversed = numbers.reverse();
+      reversed.print();
+      System.out.println("----------------------------");
+      System.out.println("insertAt");
+      arrays.exercise.Array mutated = numbers.insertAt(80, 4);
+      mutated.print();
 
       return;
     }
